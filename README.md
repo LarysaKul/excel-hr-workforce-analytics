@@ -1,74 +1,54 @@
-# HR Workforce Analytics | Interactive Excel Dashboard
+# HR Employee Data Analysis — Excel Coursework
 
-![Excel HR dashboard](assets/dashboard.png)
+An Excel coursework project completed in **March 2026** during the **DAN.IT Education Data Analytics program**.
 
-## Project overview
+The project uses a fictional HR dataset to practice spreadsheet calculations, employee-data analysis, PivotTables, and interactive reporting.
 
-An interactive **Microsoft Excel workforce-analysis dashboard** based on a fictional, 100-record HR dataset from a DAN.IT Education coursework assignment (March 2026). The coursework project was expanded and reorganized into a portfolio edition in November 2026, with clearer metric definitions, dynamic reporting dates, formula-driven summaries, and data-quality checks.
+**This repository contains my original coursework workbook, with its Excel features preserved.**
 
-This is a **training project using entirely fictional records**, not a report about a real employer.
+## Project objectives
 
-## Business questions
+The assignment consisted of two parts:
 
-- What is the size of the recorded workforce at a selected reporting date?
-- How are active and exited employees distributed across departments and gender groups?
-- Which reasons for leaving appear most frequently in the historical records?
-- How do age groups and average tenure differ within selected segments?
-- Which entries merit manual review for potential data-quality issues?
+1. Employee data processing: preparing employee information, calculating age and tenure, working with formulas and lookups, and answering questions based on the dataset.
+2. Interactive HR dashboard: using PivotTables, charts, and slicers to explore employee data.
 
-## Key results | 1 January 2023
+## Dataset
 
-| Metric | Result |
-|---|---:|
-| Employee records | **100** |
-| Departments | **8** |
-| Active employees | **39** |
-| Historical exited employees | **61** |
-| Active share of recorded cohort | **39%** |
-| Average tenure of active employees | **11.4 years** |
-| Largest department by recorded entries | **Finance (18)** |
-| Most frequent recorded exit reason | **Voluntary resignation (25)** |
-| Records flagged for age-at-hire review | **14** (7 under 18; 7 over 65) |
-
-**Interpretation warning:** 61 historical exited records out of 100 entries is **not an annual employee turnover rate**. The source is a synthetic cohort of employee records, not an audited period-by-period movement history. Age thresholds are illustrative review prompts rather than evidence of errors or employment ineligibility.
+The project uses 100 fictional employee records across 8 departments. All data are synthetic and were provided for educational purposes.
 
 ## Excel techniques
 
-- **Data preparation:** structured employee records, date fields, consistent category labels
-- **Calculated fields:** status as of a selected date, completed age, tenure, age bands, review flags
-- **Formula-driven analysis:** `COUNTIFS`, `SUMIFS`, `COUNTIF`, `DATEDIF`, `YEARFRAC`, `IF`, `IFERROR`
-- **Interactivity:** dropdown filters for department and gender, adjustable report date
-- **Visualization:** four linked charts and five KPI cards
-- **Quality checks:** duplicate identifiers, implausible or unusual ages at hire, inconsistent dates and missing exit reasons
-- **Documentation:** separate calculation tables, validation sheet and methodology notes
+- **Formulas:** IF, IFS, VLOOKUP, INDEX/MATCH, COUNTIF, COUNTIFS, AVERAGEIF, DATEDIF, YEARFRAC and text functions.
+- **Data preparation:** processing names, dates, employment information and calculated fields.
+- **PivotTables:** summarizing employee data and calculating workforce indicators.
+- **Slicers:** interactive filtering by Gender, Department and Status.
+- **Charts:** gender distribution, age groups, employee counts by department and reasons for leaving.
 
-The original course assignment used PivotTables and slicers. This revised public version deliberately uses **transparent formula-driven summaries and dropdown filters** that can be audited directly in Excel.
+## Key results
+
+The saved workbook contains 100 employee records, including 39 marked as working and 61 marked as having left. The most frequent recorded reason for leaving is voluntary resignation, with 25 records.
+
+These figures describe a fictional dataset and should not be interpreted as actual company workforce statistics or an annual employee turnover rate.
 
 ## Workbook structure
 
-| Sheet | Purpose |
-|---|---|
-| `Dashboard` | Interactive KPI cards and four charts; change department, gender, or reporting date |
-| `Analysis` | Formula-driven data tables behind the charts and KPI cards |
-| `Employee_Data` | Fictional source records plus calculated fields and a review flag |
-| `Data_Quality` | Checks and important interpretation cautions |
-| `Methodology` | Definitions, methodology, limitations, and instructions |
+- `Dashboard` — interactive dashboard with four charts and slicers.
+- `Завдання 2` — employee-data processing and summary calculations.
+- `Table` — source data prepared for PivotTables.
+- `Calculation` — supporting summaries.
+- `Дод. розрахункуи до зав.1` — additional calculations.
+- `Відділи` — supporting employee and department data.
+- `Завдання 1` — original coursework instructions.
 
 ## How to explore
 
-1. Download **[Excel_HR_Workforce_Portfolio.xlsx](Excel_HR_Workforce_Portfolio.xlsx)** and open it in Microsoft Excel.
-2. Go to `Dashboard`.
-3. Use the **Department** and **Gender** dropdowns to filter the dashboard.
-4. Change the **As of date** (default: **01 Jan 2023**) to inspect historical status and tenure calculations.
-5. Visit `Analysis` to inspect the formulas; see `Data_Quality` and `Methodology` for the assumptions.
+Download the Excel workbook and open it in Microsoft Excel Desktop. Start with the `Dashboard` sheet and use the slicers to filter the results. Review the supporting sheets to explore the formulas and calculations.
 
-The workbook contains no macros and does not require external corporate data connections. For full chart/formula recalculation, open it in desktop Excel.
+## Limitations
 
-## Limitations and responsible interpretation
+This is an original educational project, not a production HR reporting system.
 
-- All names, employment dates and exits are **fictional** course data.
-- An age-at-hire review flag is **not** evidence of an actual error or legal issue. Flagged records remain in the analysis pending review.
-- The sample is small, artificial and not representative of a real company; **do not infer causality or real-world HR policy outcomes**.
-- The project demonstrates spreadsheet analytics, not production HR reporting or enterprise BI deployment.
+Some tenure formulas use TODAY(), meaning their results can change when the workbook is recalculated. The employee records are fictional, and the exercise's classifications should not be treated as verified real-world HR attributes.
 
-**Context:** DAN.IT Education, Data Analytics professional program, 2026. Original Excel coursework completed in March 2026; portfolio improvements added in November 2026.
+**DAN.IT Education | Data Analytics | March 2026**
